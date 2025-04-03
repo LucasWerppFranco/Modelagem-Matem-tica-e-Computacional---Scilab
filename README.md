@@ -1,4 +1,4 @@
-# Modelagem Matem tica e Computacional - Scilab
+# Modelagem Matematica e Computacional - Scilab
 
 
 ```
