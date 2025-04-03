@@ -28,7 +28,7 @@ onde x representa o número de passageiros no ônibus.
 
 ---
 
-### ** 1. Interpretação da Fórmula**
+### **1. Interpretação da Fórmula**
 
 A fórmula dada para a tarifa dinâmica do transporte público é:
 
@@ -41,7 +41,7 @@ Onde:
 - \( T(x) \) é a tarifa em reais (R$) que depende do número de passageiros, \( x \).
 - \( x \) é o número de passageiros no ônibus, variando entre 0 e 20.
 
-#### 1.1 Significado do coeficiente angular e do termo independente:
+#### **1.1 Significado do coeficiente angular e do termo independente**
 
 1. **Coeficiente angular (0.5)**:
    - O coeficiente angular \( 0.5 \) indica a taxa de variação da tarifa em relação ao número de passageiros. Ou seja, para cada passageiro adicional, a tarifa aumenta R$ 0,50.
@@ -50,7 +50,7 @@ Onde:
 2. **Termo independente (4)**:
    - O termo independente \( 4 \) representa o valor inicial da tarifa quando não há passageiros (\( x = 0 \)). Ou seja, a tarifa mínima será de R$ 4,00 quando não houver nenhum passageiro no ônibus.
    
-### ** 2. Análise Gráfica**
+### **2. Análise Gráfica**
 
 A função \( T(x) = 4 + 0.5x \) é uma reta, porque é uma função linear. Ao analisar graficamente:
 
@@ -72,7 +72,7 @@ x = -8
 
 Entretanto, esse valor não faz sentido dentro do contexto da função, pois o número de passageiros não pode ser negativo. Isso confirma que a função não atravessa o eixo x no intervalo \( x \in [0, 20] \), ou seja, a tarifa nunca será zero dentro desse intervalo.
 
-### **3. Cálculo Aplicado:**
+### **3. Cálculo Aplicado**
 
 Vamos calcular a diferença máxima entre a menor e a maior tarifa cobradas, dado que o número de passageiros varia entre 5 e 18.
 
@@ -148,7 +148,7 @@ onde h(t) é a altura em metros e t é o tempo em segundos após a decol
 
 Este documento apresenta a análise da trajetória de um drone de entregas modelada por uma equação quadrática. O objetivo é compreender o comportamento da função e implementar a simulação no Scilab.
 
-### 1. Equação do Movimento
+### **1. Equação do Movimento**
 
 A altura do drone em função do tempo é dada por:
 
@@ -161,13 +161,13 @@ Onde:
 - \(h(t)\) representa a altura do drone em metros.
 - \(t\) é o tempo em segundos após a decolagem, no intervalo \(t \in [0,5]\).
 
-### 2. Interpretação da Equação
+### **2. Interpretação da Equação**
 
 - **Coeficiente \(-4\) (termo de \(t^2\)): Indica uma concavidade para baixo, ou seja, o drone sobe até um ponto máximo e depois desce.
 - **Coeficiente \(16\) (termo de \(t\)): Representa a velocidade inicial do drone.
 - Termo independente \(10\): Indica a altura inicial do drone ao decolar.
 
-### 3. Esboço Manual
+### **3. Esboço Manual**
 
 Antes de utilizar o Scilab, desenhe manualmente a trajetória do drone, incluindo:
 
@@ -176,9 +176,9 @@ Antes de utilizar o Scilab, desenhe manualmente a trajetória do drone, incluind
 
 *(Anexar o esboço manual aqui)*
 
-### 4. Cálculo Aplicado
+### **4. Cálculo Aplicado**
 
-#### 4.1 Altura Inicial
+#### **4.1 Altura Inicial**
 
 $$
 h(0) = -4(0)^2 + 16(0) + 10 = 10
@@ -186,7 +186,7 @@ $$
 
 O drone parte de **10 metros** de altura.
 
-#### 4.2 Altura Máxima
+#### **4.2 Altura Máxima**
 
 A altura máxima ocorre no vértice da parábola:
 
@@ -202,7 +202,7 @@ $$
 
 A altura máxima é **26 metros** em **2 segundos**.
 
-#### 4.3 Retorno ao Solo
+#### **4.3 Retorno ao Solo**
 
 Resolvendo \(h(t) = 0\):
 
@@ -216,7 +216,7 @@ $$
 
 O drone retorna ao solo após **4,55 segundos**.
 
-### 5. Implementação no Scilab
+### **5. Implementação no Scilab**
 
 ```scilab
 // 1. Definir o intervalo de tempo
@@ -262,7 +262,7 @@ onde E(x) é o consumo energético em megawatts e x é a quantidade de má
 
 ---
 
-### Otimização do Consumo de Energia em uma Indústria
+### **1. Otimização do Consumo de Energia em uma Indústria**
 
 Este documento apresenta a análise da função que modela o consumo de energia em uma indústria, visando determinar a quantidade ótima de máquinas em operação para minimizar o consumo energético.
 
@@ -278,13 +278,13 @@ Onde:
 
 - xx é a quantidade de máquinas em operação.
 
-### 2. Interpretação da Equação
+### **2. Interpretação da Equação**
 
 - **Coeficiente \(1\) (termo \(x^2\))**: Indica que a função é uma parábola com concavidade para cima, ou seja, existe um ponto de mínimo.
 - **Coeficiente \(-10\) (termo \(x\))**: Representa a taxa de variação do consumo em relação ao número de máquinas.
 - **Termo independente \(30\)**: Indica o consumo energético básico quando nenhuma máquina está em operação.
 
-### 3. Esboço Manual
+### **3. Esboço Manual**
 
 Antes de utilizar o Scilab, desenhe manualmente o gráfico da função e identifique:
 
@@ -293,7 +293,7 @@ Antes de utilizar o Scilab, desenhe manualmente o gráfico da função e identif
 
 *(Anexar o esboço manual aqui)*
 
-### 4. Otimização
+### **4. Otimização**
 
 Para minimizar o consumo, encontramos o vértice da parábola:
 
@@ -309,7 +309,7 @@ $$
 
 Portanto, o consumo mínimo de energia é **5 megawatts** quando **5 máquinas** estão em operação.
 
-### 5. Simulação no Scilab
+### **5. Simulação no Scilab**
 
 ```scilab
 // 1. Definir o intervalo de produção de máquinas
@@ -337,7 +337,115 @@ disp("Consumo mínimo de energia: " + string(E_min) + " MW");  // Exibe no conso
 legend("Consumo energético", "Ponto mínimo de consumo");  // Adiciona a legenda no gráfico
 ```
 
-#### 5.1 - Grafico
+#### **5.1 - Grafico**
 
 ![image](https://github.com/user-attachments/assets/f3611393-4ff1-48e4-8f1b-dd066597338e)
 
+---
+
+## **(Questão 4) - Trajetória de um Drone de Entregas:**
+
+Um estudo ambiental prevê que a poluição em uma cidade crescerá linearmente com o tempo, seguindo o modelo: 
+
+P(t) = 50+12t,   t ∈ [0,10] 
+
+onde P(t) é o índice de poluição e t é o número de anos a partir de 2025. 
+
+---
+
+### **1. Equação do Modelo de Poluição**
+
+A poluição da cidade é modelada pela função linear:
+
+$$
+P(t) = 50 + 12t
+$$
+
+Onde:
+
+- \( P(t) \) é o índice de poluição no tempo \( t \), em unidades específicas de poluição.
+- \( t \) é o número de anos a partir de 2025, no intervalo \( t \in [0,10] \).
+
+### **2. Interpretação da Equação**
+
+- **Coeficiente angular (12)**: O coeficiente angular \( 12 \) indica a taxa de crescimento da poluição ao longo do tempo. Ou seja, a cada ano, o índice de poluição aumenta em 12 unidades. Isso significa que, conforme os anos passam, a poluição se intensifica linearmente.
+
+### **3. Projeções para 2030 e 2035**
+
+Queremos calcular o índice de poluição para os anos de 2030 e 2035. Sabemos que \( t = 0 \) corresponde a 2025.
+
+#### **Índice de Poluição em 2030**:
+
+Para 2030, \( t = 5 \) (5 anos após 2025):
+
+$$
+P(5) = 50 + 12(5) = 50 + 60 = 110
+$$
+
+Logo, o índice de poluição em 2030 será **110 unidades**.
+
+#### **Índice de Poluição em 2035**:
+
+Para 2035, \( t = 10 \) (10 anos após 2025):
+
+$$
+P(10) = 50 + 12(10) = 50 + 120 = 170
+$$
+
+Logo, o índice de poluição em 2035 será **170 unidades**.
+
+### **4. Política Pública - Limite de Poluição**
+
+A partir do modelo, podemos ver que o índice de poluição atingirá **170 unidades** em 2035. A política pública deve ser implementada antes desse ano, para evitar danos. A sugestão seria:
+
+- **Reduzir a taxa de crescimento da poluição** por meio de iniciativas como:
+  - **Implementação de tecnologias mais limpas** no setor industrial.
+  - **Incentivos a transportes sustentáveis** (como bicicletas e transporte público eficiente).
+  - **Reflorestamento e aumento de áreas verdes**.
+  - **Educação ambiental e engajamento da população**.
+
+A meta seria reduzir a taxa de crescimento da poluição para um valor abaixo de 12, para que o índice de poluição se estabilize ou diminua.
+
+### 5. **Representação Gráfica - Esboço Manual e Análise do Gráfico**
+
+- **Esboço Manual**: Antes de usar o Scilab, desenhe a reta do gráfico, começando em \( P(0) = 50 \) (índice de poluição em 2025). A reta terá uma inclinação de 12, o que significa que a cada ano o índice aumenta em 12 unidades.
+- **Ponto onde \( P(t) = 0 \)**: Para encontrar os zeros da função, resolvemos \( P(t) = 0 \):
+  
+  \[
+  0 = 50 + 12t \quad \Rightarrow \quad t = -\frac{50}{12} \approx -4.17
+  \]
+
+Este valor não faz sentido no contexto do problema, pois não pode haver anos negativos em relação a 2025. Isso confirma que a função nunca atravessa o eixo \( t \).
+
+### **6. Código Scilab - Implementação da Função e Geração do Gráfico**
+
+```scilab
+// 1. Definir o intervalo de tempo (anos desde 2025)
+t = 0:0.1:10;  // Vetor t de 0 a 10, representando os anos a partir de 2025
+
+// 2. Função de poluição P(t) = 50 + 12t
+P = 50 + 12 * t;  // Calcula o índice de poluição para cada valor de t
+
+// 3. Plotar o gráfico
+plot(t, P, "r--");  // Plota a função de poluição com linha vermelha tracejada grossa
+xlabel("Ano (t - 2025)");  // Rótulo do eixo x, indicando que t é o número de anos a partir de 2025
+ylabel("Índice de Poluição (P(t))");  // Rótulo do eixo y, indicando o índice de poluição
+title("Crescimento da Poluição Atmosférica");  // Título do gráfico
+
+// 4. Projeção para 2030 e 2035
+P_2030 = 50 + 12 * 5;  // Calcula a poluição em 2030
+P_2035 = 50 + 12 * 10;  // Calcula a poluição em 2035
+
+// 5. Destacar os pontos para 2030 e 2035
+plot(5, P_2030, "bo");  // Ponto para 2030 em azul
+plot(10, P_2035, "go");  // Ponto para 2035 em verde
+
+// Exibir os resultados no console
+disp("Índice de poluição em 2030: " + string(P_2030));
+disp("Índice de poluição em 2035: " + string(P_2035));
+
+// 6. Adicionar legenda ao gráfico
+legend("Crescimento da poluição", "Poluição em 2030", "Poluição em 2035");  // Adiciona a legenda explicando os pontos
+```
+
+#### **6.1 Grafico**
