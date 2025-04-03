@@ -148,9 +148,154 @@ Marque os pontos \( x = 5 \) e \( x = 18 \) no gráfico, mostrando que a diferen
 
 ![image](https://github.com/user-attachments/assets/f7040110-917f-45f0-9359-48dc77d01a36)
 
-### **Entrega Final:**
+---
 
-1. **Esboço Manual**: O gráfico mostra uma linha reta iniciando em \( T = 4 \) e subindo com uma inclinação de 0.5.
-2. **Cálculos**: A diferença entre a maior e a menor tarifa é R$ 6,50.
-3. **Código Scilab**: O código fornecido implementa a fórmula da tarifa dinâmica e gera o gráfico com os pontos de interesse destacados.
-4. **Gráfico Gerado**: O gráfico foi gerado com as rotulações nos eixos e com os pontos de interesse.
+## **(Questão 2) - Trajetória de um Drone de Entregas:**
+
+O percurso de um drone de entregas é modelado pela equação da altura em função do tempo: 
+
+h(t) = −4t2 + 16t + 10,  t ∈ [0,5] 
+
+onde h(t) é a altura em metros e t é o tempo em segundos após a decolagem.
+
+---
+
+Aqui está a reescrita da atividade seguindo as regras estabelecidas:  
+
+---
+
+## **Análise do Percurso de um Drone de Entregas**  
+
+O percurso de um drone de entregas é modelado pela seguinte equação da altura em função do tempo:  
+
+\[
+h(t) = -4t^2 + 16t + 10
+\]
+
+Onde:  
+- \( h(t) \) representa a altura do drone em metros.  
+- \( t \) é o tempo em segundos após a decolagem, no intervalo \( t \in [0,5] \).  
+
+---
+
+### **1. Interpretação da Equação**  
+
+A equação \( h(t) = -4t^2 + 16t + 10 \) segue o modelo de uma função quadrática.  
+
+- **Coeficiente \( -4 \) (termo de \( t^2 \))**: Indica que a parábola tem concavidade para baixo, ou seja, o drone sobe até um ponto máximo e depois começa a descer.  
+- **Coeficiente \( 16 \) (termo de \( t \))**: Representa a velocidade inicial do drone no instante da decolagem.  
+- **Termo independente \( 10 \)**: Indica a altura inicial do drone no momento da decolagem (\( t = 0 \)), ou seja, o drone parte de 10 metros de altura.  
+
+---
+
+### **2. Esboço Manual da Trajetória**  
+
+Antes de utilizar o Scilab, desenhe manualmente a trajetória do drone, marcando os seguintes pontos no gráfico:  
+- **Altura inicial (\( h(0) \))**  
+- **Altura máxima e o instante em que ocorre**  
+- **O ponto onde o drone retorna ao solo (\( h(t) = 0 \), se estiver dentro do intervalo de análise)**  
+
+(Anexar o esboço aqui)  
+
+---
+
+### **3. Cálculo Aplicado**  
+
+1. **Altura Inicial**  
+   \[
+   h(0) = -4(0)^2 + 16(0) + 10 = 10
+   \]
+   O drone parte de uma altura de **10 metros**.  
+
+2. **Altura Máxima**  
+
+A altura máxima ocorre no **vértice** da parábola. O tempo em que isso acontece é dado por:  
+
+   \[
+   t_{\text{máx}} = \frac{-b}{2a} = \frac{-16}{2(-4)} = \frac{16}{8} = 2 \text{ segundos}
+   \]
+
+Substituindo \( t = 2 \) na equação para encontrar a altura máxima:  
+
+   \[
+   h(2) = -4(2)^2 + 16(2) + 10
+   \]
+   \[
+   h(2) = -4(4) + 32 + 10
+   \]
+   \[
+   h(2) = -16 + 32 + 10 = 26
+   \]
+
+Portanto, a altura máxima atingida pelo drone é **26 metros** após **2 segundos**.  
+
+3. **Retorno ao Solo (\( h(t) = 0 \))**  
+
+Para encontrar o tempo em que o drone retorna ao solo:  
+
+   \[
+   -4t^2 + 16t + 10 = 0
+   \]
+
+Resolvendo essa equação do segundo grau:  
+
+   \[
+   t = \frac{-16 \pm \sqrt{(16)^2 - 4(-4)(10)}}{2(-4)}
+   \]
+   \[
+   t = \frac{-16 \pm \sqrt{256 + 160}}{-8}
+   \]
+   \[
+   t = \frac{-16 \pm \sqrt{416}}{-8}
+   \]
+   \[
+   t = \frac{-16 \pm 20.4}{-8}
+   \]
+
+Os dois valores possíveis de \( t \) são:  
+
+   \[
+   t_1 = \frac{-16 + 20.4}{-8} = \frac{4.4}{-8} = -0.55 \quad (\text{descartado, pois } t \geq 0)
+   \]
+
+   \[
+   t_2 = \frac{-16 - 20.4}{-8} = \frac{-36.4}{-8} = 4.55
+   \]
+
+Portanto, o drone toca o solo **após 4,55 segundos**. Como esse valor está dentro do intervalo \( [0,5] \), ele é válido para a análise.  
+
+---
+
+### **4. Implementação no Scilab**  
+
+Agora, vamos ao código no **Scilab** para gerar o gráfico e destacar os pontos importantes:  
+
+```scilab
+// 1. Definir o intervalo de tempo
+t = 0:0.1:5;  // Variando de 0 a 5 segundos em incrementos de 0.1
+h = -4*t.^2 + 16*t + 10;  // Função da altura do drone
+
+// 2. Plotar o gráfico
+plot(t, h, "r-");  // Gráfico da altura em função do tempo (linha vermelha)
+xlabel("Tempo (s)");  // Rótulo do eixo x
+ylabel("Altura (m)");  // Rótulo do eixo y
+title("Trajetória do Drone de Entregas");  // Título do gráfico
+
+// 3. Destacar os pontos principais no gráfico
+t_max = 2;  // Tempo da altura máxima
+h_max = 26; // Altura máxima
+plot(t_max, h_max, "bo");  // Ponto azul para a altura máxima
+
+t_solo = 4.55;  // Tempo em que o drone retorna ao solo
+plot(t_solo, 0, "go");  // Ponto verde para quando o drone toca o solo
+
+// Exibir os valores calculados no console
+disp("Altura inicial: 10 metros");
+disp("Altura máxima: " + string(h_max) + " metros em t = " + string(t_max) + " s");
+disp("Tempo de retorno ao solo: " + string(t_solo) + " s");
+
+// Adicionando legenda ao gráfico
+legend("Trajetória do drone", "Altura máxima", "Retorno ao solo");
+```
+
+---
