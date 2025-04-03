@@ -18,7 +18,7 @@
  \____\___/|_| |_| |_| .__/ \__,_|\__\__,_|\___|_|\___/|_| |_|\__,_|_| 
                      |_|                                              
 ```
-## Questão 1 - Tarifação Inteligente no Transporte Público:
+## (Questão 1) - Tarifação Inteligente no Transporte Público:
 
 Um sistema de transporte público usa uma tarifa dinâmica que depende do número de passageiros. A tarifa T(x), em reais, é definida como: 
 
