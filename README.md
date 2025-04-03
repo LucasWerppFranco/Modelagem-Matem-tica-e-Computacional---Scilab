@@ -282,18 +282,17 @@ onde E(x) é o consumo energético em megawatts e x é a quantidade de má
 
 Este documento apresenta a análise da função que modela o consumo de energia em uma indústria, visando determinar a quantidade ótima de máquinas em operação para minimizar o consumo energético.
 
-## 1. Equação do Consumo Energético
+1. Equação do Consumo Energético
 
-O consumo de energia em função da produção de máquinas é dado por:
-
-$$
-E(x) = x^2 - 10x + 30
-$$
+A função que modela o consumo de energia agora é:
+E(x)=x2−10x−30
+E(x)=x2−10x−30
 
 Onde:
 
-- **E(x)**: Consumo energético em megawatts.
-- **x**: Quantidade de máquinas em operação.
+- E(x)E(x) representa o consumo de energia em megawatts.
+
+- xx é a quantidade de máquinas em operação.
 
 ### 2. Interpretação da Equação
 
@@ -329,26 +328,29 @@ Portanto, o consumo mínimo de energia é **5 megawatts** quando **5 máquinas**
 ### 5. Simulação no Scilab
 
 ```scilab
-// 1. Definir o intervalo de máquinas
-x = 0:0.1:10;
-E = x.^2 - 10*x - 30;
+// 1. Definir o intervalo de produção de máquinas
+x = 0:0.1:10;  // O vetor x representa a quantidade de máquinas em operação, de 0 até 10 com incremento de 0.1
 
-// 2. Plotar o gráfico
-graph = plot(x, E, "b-");
-xlabel("Quantidade de Máquinas");
-ylabel("Consumo de Energia (MW)");
-title("Otimização do Consumo de Energia na Indústria");
+// 2. Função de consumo de energia E(x) = x^2 - 10x - 30
+E = x.^2 - 10*x - 30;  // Calcula o consumo de energia para cada valor de x
 
-// 3. Destacar o ponto de consumo mínimo
-x_otimo = 5;
-E_otimo = 5;
-plot(x_otimo, E_otimo, "ro");
+// 3. Plotar o gráfico
+plot(x, E, "b-");  // Plota a função E(x) com a curva em azul
+xlabel("Número de Máquinas");  // Rótulo do eixo x (quantidade de máquinas)
+ylabel("Consumo de Energia (MW)");  // Rótulo do eixo y (consumo de energia em megawatts)
+title("Otimização do Consumo Energético");  // Título do gráfico
 
-disp("Quantidade ótima de máquinas: " + string(x_otimo));
-disp("Consumo mínimo de energia: " + string(E_otimo) + " MW");
+// 4. Destacar o ponto mínimo
+x_min = 5;  // O número de máquinas no ponto mínimo, obtido com a fórmula do vértice
+E_min = 5^2 - 10*5 - 30;  // Calcula o consumo de energia no ponto mínimo
+plot(x_min, E_min, "ro");  // Plota o ponto mínimo no gráfico, usando um marcador vermelho
 
-// Adicionar legenda
-legend("Consumo de Energia", "Ponto ótimo");
+// 5. Exibir valores no console
+disp("Número ideal de máquinas: " + string(x_min));  // Exibe no console o número ideal de máquinas
+disp("Consumo mínimo de energia: " + string(E_min) + " MW");  // Exibe no console o consumo de energia mínimo
+
+// 6. Adicionar legenda ao gráfico
+legend("Consumo energético", "Ponto mínimo de consumo");  // Adiciona a legenda no gráfico
 ```
 
 #### 5.1 - Grafico
