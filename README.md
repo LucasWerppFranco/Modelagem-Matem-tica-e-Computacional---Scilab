@@ -449,3 +449,5 @@ legend("Crescimento da poluição", "Poluição em 2030", "Poluição em 2035");
 ```
 
 #### **6.1 Grafico**
+
+![image](https://github.com/user-attachments/assets/7e7ee2d4-994d-4081-8ba9-b9941d00e767)
