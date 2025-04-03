@@ -268,3 +268,90 @@ legend("Trajetória do drone", "Altura máxima", "Retorno aosolo");
 
 ---
 
+## **(Questão 3) - Otimização do Consumo de Energia em uma Indústria:**
+
+O consumo de energia de uma indústria em função da produção de máquinas é modelado por: 
+
+E(x) = x2 − 10x + 30,	x -30
+
+onde E(x) é o consumo energético em megawatts e x é a quantidade de máquinas em operação.  
+
+---
+
+### Otimização do Consumo de Energia em uma Indústria
+
+Este documento apresenta a análise da função que modela o consumo de energia em uma indústria, visando determinar a quantidade ótima de máquinas em operação para minimizar o consumo energético.
+
+## 1. Equação do Consumo Energético
+
+O consumo de energia em função da produção de máquinas é dado por:
+
+$$
+E(x) = x^2 - 10x + 30
+$$
+
+Onde:
+
+- **E(x)**: Consumo energético em megawatts.
+- **x**: Quantidade de máquinas em operação.
+
+### 2. Interpretação da Equação
+
+- **Coeficiente \(1\) (termo \(x^2\))**: Indica que a função é uma parábola com concavidade para cima, ou seja, existe um ponto de mínimo.
+- **Coeficiente \(-10\) (termo \(x\))**: Representa a taxa de variação do consumo em relação ao número de máquinas.
+- **Termo independente \(30\)**: Indica o consumo energético básico quando nenhuma máquina está em operação.
+
+### 3. Esboço Manual
+
+Antes de utilizar o Scilab, desenhe manualmente o gráfico da função e identifique:
+
+- **Ponto de mínimo da função** (quantidade ideal de máquinas para menor consumo).
+- **Zeros da função** (se existirem dentro do intervalo de interesse).
+
+*(Anexar o esboço manual aqui)*
+
+### 4. Otimização
+
+Para minimizar o consumo, encontramos o vértice da parábola:
+
+$$
+x_{ótimo} = \frac{-b}{2a} = \frac{-(-10)}{2(1)} = \frac{10}{2} = 5
+$$
+
+Substituindo \(x = 5\) na equação:
+
+$$
+E(5) = (5)^2 - 10(5) + 30 = 25 - 50 + 30 = 5
+$$
+
+Portanto, o consumo mínimo de energia é **5 megawatts** quando **5 máquinas** estão em operação.
+
+### 5. Simulação no Scilab
+
+```scilab
+// 1. Definir o intervalo de máquinas
+x = 0:0.1:10;
+E = x.^2 - 10*x + 30;
+
+// 2. Plotar o gráfico
+graph = plot(x, E, "b-");
+xlabel("Quantidade de Máquinas");
+ylabel("Consumo de Energia (MW)");
+title("Otimização do Consumo de Energia na Indústria");
+
+// 3. Destacar o ponto de consumo mínimo
+x_otimo = 5;
+E_otimo = 5;
+plot(x_otimo, E_otimo, "ro");
+
+disp("Quantidade ótima de máquinas: " + string(x_otimo));
+disp("Consumo mínimo de energia: " + string(E_otimo) + " MW");
+
+// Adicionar legenda
+legend("Consumo de Energia", "Ponto ótimo");
+```
+
+#### 5.1 - Grafico
+
+![image](https://github.com/user-attachments/assets/f3611393-4ff1-48e4-8f1b-dd066597338e)
+
