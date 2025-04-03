@@ -160,11 +160,11 @@ onde h(t) é a altura em metros e t é o tempo em segundos após a decol
 
 --- 
 
-# Análise do Percurso de um Drone de Entregas
+### Análise do Percurso de um Drone de Entregas
 
 Este documento apresenta a análise da trajetória de um drone de entregas modelada por uma equação quadrática. O objetivo é compreender o comportamento da função e implementar a simulação no Scilab.
 
-## 1. Equação do Movimento
+### 1. Equação do Movimento
 
 A altura do drone em função do tempo é dada por:
 
@@ -177,24 +177,24 @@ Onde:
 - \(h(t)\) representa a altura do drone em metros.
 - \(t\) é o tempo em segundos após a decolagem, no intervalo \(t \in [0,5]\).
 
-## 2. Interpretação da Equação
+### 2. Interpretação da Equação
 
-- **Coeficiente ****************************************************************************************************************************************************************************************\(-4\)**************************************************************************************************************************************************************************************** (termo de ****************************************************************************************************************************************************************************************\(t^2\)****************************************************************************************************************************************************************************************)**: Indica uma concavidade para baixo, ou seja, o drone sobe até um ponto máximo e depois desce.
-- **Coeficiente ****************************************************************************************************************************************************************************************\(16\)**************************************************************************************************************************************************************************************** (termo de ****************************************************************************************************************************************************************************************\(t\)****************************************************************************************************************************************************************************************)**: Representa a velocidade inicial do drone.
-- Termo independente **\(10\)**: Indica a altura inicial do drone ao decolar.
+- **Coeficiente \(-4\) (termo de \(t^2\)): Indica uma concavidade para baixo, ou seja, o drone sobe até um ponto máximo e depois desce.
+- **Coeficiente \(16\) (termo de \(t\)): Representa a velocidade inicial do drone.
+- Termo independente \(10\): Indica a altura inicial do drone ao decolar.
 
-## 3. Esboço Manual
+### 3. Esboço Manual
 
 Antes de utilizar o Scilab, desenhe manualmente a trajetória do drone, incluindo:
 
 - \*\*Altura inicia (**\(h(0)\)**
-- \*\*Altura máxima e o tempo em que ocorre-o ponto onde o drone retorna ao solo \(h(t) = 0\)**o ************************************\(h(t) = 0\)************************************, se estiver dentro do intervalo)**
+- \*\*Altura máxima e o tempo em que ocorre-o ponto onde o drone retorna ao solo \(h(t) = 0\)**o \(h(t) = 0\), se estiver dentro do intervalo)**
 
 *(Anexar o esboço manual aqui)*
 
-## 4. Cálculo Aplicado
+### 4. Cálculo Aplicado
 
-### 4.1 Altura Inicial
+#### 4.1 Altura Inicial
 
 $$
 h(0) = -4(0)^2 + 16(0) + 10 = 10
@@ -202,7 +202,7 @@ $$
 
 O drone parte de **10 metros** de altura.
 
-### 4.2 Altura Máxima
+#### 4.2 Altura Máxima
 
 A altura máxima ocorre no vértice da parábola:
 
@@ -218,7 +218,7 @@ $$
 
 A altura máxima é **26 metros** em **2 segundos**.
 
-### 4.3 Retorno ao Solo
+#### 4.3 Retorno ao Solo
 
 Resolvendo \(h(t) = 0\):
 
@@ -232,7 +232,7 @@ $$
 
 O drone retorna ao solo após **4,55 segundos**.
 
-## 5. Implementação no Scilab
+### 5. Implementação no Scilab
 
 ```scilab
 // 1. Definir o intervalo de tempo
@@ -261,6 +261,8 @@ disp("Tempo de retorno ao solo: " + string(t_solo) + " s");
 // Adicionar legenda
 legend("Trajetória do drone", "Altura máxima", "Retorno aosolo");
 ```
+
+#### 5.1 
 
 ---
 
