@@ -128,11 +128,6 @@ disp("Diferença máxima de tarifa: " + string(T_max - T_min));  // Exibe a dife
 legend("T_x = 4 + 0.5*x")
 ```
 
-### **Resultado:**
-
-![image](https://github.com/user-attachments/assets/f7040110-917f-45f0-9359-48dc77d01a36)
-
-
 ### **Explicação do Código:**
 
 - **`x = 0:0.1:20`**: Define o intervalo de passageiros de 0 a 20 com incremento de 0.1.
@@ -145,11 +140,13 @@ legend("T_x = 4 + 0.5*x")
 - **`plot(x_min, T_min, "bo")`** e **`plot(x_max, T_max, "go")`**: Marca no gráfico os pontos correspondentes aos valores de \( x = 5 \) e \( x = 18 \).
 - **`disp`**: Exibe a diferença máxima entre as tarifas no console.
 
-### **Esboço Manual do Gráfico**
+### **Esboço do Gráfico**
 
-Para o esboço manual, imagine uma reta começando em \( T(0) = 4 \) e subindo com uma inclinação de 0.5. A reta intercepta o eixo y em \( T = 4 \), e para \( x = 20 \), \( T(20) = 4 + 0.5 \times 20 = 14 \).
+A reta começando em \( T(0) = 4 \) e subindo com uma inclinação de 0.5. A reta intercepta o eixo y em \( T = 4 \), e para \( x = 20 \), \( T(20) = 4 + 0.5 \times 20 = 14 \).
 
 Marque os pontos \( x = 5 \) e \( x = 18 \) no gráfico, mostrando que a diferença entre as tarifas nesses pontos é de R$ 6,50.
+
+![image](https://github.com/user-attachments/assets/f7040110-917f-45f0-9359-48dc77d01a36)
 
 ### **Entrega Final:**
 
