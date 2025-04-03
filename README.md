@@ -20,6 +20,14 @@
 ```
 ## Questão 1 - Tarifação Inteligente no Transporte Público:
 
+Um sistema de transporte público usa uma tarifa dinâmica que depende do número de passageiros. A tarifa T(x), em reais, é definida como: 
+
+T(x) = 4 + 0.5x,        x ∈ [0,20] 
+
+onde x representa o número de passageiros no ônibus. 
+
+---
+
 Para gerar o código Scilab que implemente a tarifação inteligente no transporte público, conforme a equação fornecida, e plotar o gráfico, podemos seguir os seguintes passos:
 
 1. Definir a função tarifária \( T(x) = 4 + 0.5x \) onde \( x \) é o número de passageiros, que varia de 0 a 20.
