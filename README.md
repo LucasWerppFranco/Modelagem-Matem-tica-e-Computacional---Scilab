@@ -181,7 +181,7 @@ Onde:
 
 - **Coeficiente ************************\(-4\)************************ (termo de ************************\(t^2\)************************)**: Indica uma concavidade para baixo, ou seja, o drone sobe até um ponto máximo e depois desce.
 - **Coeficiente ************************\(16\)************************ (termo de ************************\(t\)************************)**: Representa a velocidade inicial do drone.
-- **Termo independente \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*****\(10\)**: Indica a altura inicial do drone ao decolar.
+- **Termo independente \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\(10\)**: Indica a altura inicial do drone ao decolar.
 
 ## 3. Esboço Manual
 
