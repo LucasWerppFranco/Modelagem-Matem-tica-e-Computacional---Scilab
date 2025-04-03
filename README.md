@@ -1,1 +1,1 @@
-# Modelagem-Matem-tica-e-Computacional---Scilab
+# Modelagem Matem tica e Computacional - Scilab
