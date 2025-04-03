@@ -18,7 +18,7 @@
  \____\___/|_| |_| |_| .__/ \__,_|\__\__,_|\___|_|\___/|_| |_|\__,_|_| 
                      |_|                                              
 ```
-## (Questão 1) - Tarifação Inteligente no Transporte Público:
+## **(Questão 1) - Tarifação Inteligente no Transporte Público:**
 
 Um sistema de transporte público usa uma tarifa dinâmica que depende do número de passageiros. A tarifa T(x), em reais, é definida como: 
 
@@ -123,7 +123,15 @@ plot(x_max, T_max, "go");  // Ponto para a maior tarifa (x=18)
 
 // Exibir as diferenças de tarifa no gráfico
 disp("Diferença máxima de tarifa: " + string(T_max - T_min));  // Exibe a diferença máxima entre as tarifas
+
+// Adicionando a legenda ao gráfico.
+legend("T_x = 4 + 0.5*x")
 ```
+
+### **Resultado:**
+
+![image](https://github.com/user-attachments/assets/f7040110-917f-45f0-9359-48dc77d01a36)
+
 
 ### **Explicação do Código:**
 
