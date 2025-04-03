@@ -158,11 +158,7 @@ h(t) = −4t2 + 16t + 10,  t ∈ [0,5]
 
 onde h(t) é a altura em metros e t é o tempo em segundos após a decolagem.
 
----
-
 Aqui está a reescrita da atividade seguindo as regras estabelecidas:  
-
----
 
 ## **Análise do Percurso de um Drone de Entregas**  
 
@@ -176,8 +172,6 @@ Onde:
 - \( h(t) \) representa a altura do drone em metros.  
 - \( t \) é o tempo em segundos após a decolagem, no intervalo \( t \in [0,5] \).  
 
----
-
 ### **1. Interpretação da Equação**  
 
 A equação \( h(t) = -4t^2 + 16t + 10 \) segue o modelo de uma função quadrática.  
@@ -185,8 +179,6 @@ A equação \( h(t) = -4t^2 + 16t + 10 \) segue o modelo de uma função quadrá
 - **Coeficiente \( -4 \) (termo de \( t^2 \))**: Indica que a parábola tem concavidade para baixo, ou seja, o drone sobe até um ponto máximo e depois começa a descer.  
 - **Coeficiente \( 16 \) (termo de \( t \))**: Representa a velocidade inicial do drone no instante da decolagem.  
 - **Termo independente \( 10 \)**: Indica a altura inicial do drone no momento da decolagem (\( t = 0 \)), ou seja, o drone parte de 10 metros de altura.  
-
----
 
 ### **2. Esboço Manual da Trajetória**  
 
@@ -196,8 +188,6 @@ Antes de utilizar o Scilab, desenhe manualmente a trajetória do drone, marcando
 - **O ponto onde o drone retorna ao solo (\( h(t) = 0 \), se estiver dentro do intervalo de análise)**  
 
 (Anexar o esboço aqui)  
-
----
 
 ### **3. Cálculo Aplicado**  
 
@@ -263,8 +253,6 @@ Os dois valores possíveis de \( t \) são:
    \]
 
 Portanto, o drone toca o solo **após 4,55 segundos**. Como esse valor está dentro do intervalo \( [0,5] \), ele é válido para a análise.  
-
----
 
 ### **4. Implementação no Scilab**  
 
