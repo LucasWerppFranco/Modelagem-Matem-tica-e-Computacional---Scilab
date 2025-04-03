@@ -262,7 +262,9 @@ disp("Tempo de retorno ao solo: " + string(t_solo) + " s");
 legend("Trajetória do drone", "Altura máxima", "Retorno aosolo");
 ```
 
-#### 5.1 
+#### **5.1 - Grafico**
+
+![image](https://github.com/user-attachments/assets/d0c4f1b1-d39b-488a-a41e-d30e98d23e2f)
 
 ---
 
