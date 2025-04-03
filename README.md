@@ -331,7 +331,7 @@ Portanto, o consumo mínimo de energia é **5 megawatts** quando **5 máquinas**
 ```scilab
 // 1. Definir o intervalo de máquinas
 x = 0:0.1:10;
-E = x.^2 - 10*x + 30;
+E = x.^2 - 10*x - 30;
 
 // 2. Plotar o gráfico
 graph = plot(x, E, "b-");
