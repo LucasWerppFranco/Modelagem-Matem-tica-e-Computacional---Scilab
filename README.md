@@ -28,7 +28,7 @@ onde x representa o número de passageiros no ônibus.
 
 ---
 
-### **Interpretação da Fórmula**
+### ** 1. Interpretação da Fórmula**
 
 A fórmula dada para a tarifa dinâmica do transporte público é:
 
@@ -41,7 +41,7 @@ Onde:
 - \( T(x) \) é a tarifa em reais (R$) que depende do número de passageiros, \( x \).
 - \( x \) é o número de passageiros no ônibus, variando entre 0 e 20.
 
-#### Significado do coeficiente angular e do termo independente:
+#### 1.1 Significado do coeficiente angular e do termo independente:
 
 1. **Coeficiente angular (0.5)**:
    - O coeficiente angular \( 0.5 \) indica a taxa de variação da tarifa em relação ao número de passageiros. Ou seja, para cada passageiro adicional, a tarifa aumenta R$ 0,50.
@@ -50,7 +50,7 @@ Onde:
 2. **Termo independente (4)**:
    - O termo independente \( 4 \) representa o valor inicial da tarifa quando não há passageiros (\( x = 0 \)). Ou seja, a tarifa mínima será de R$ 4,00 quando não houver nenhum passageiro no ônibus.
    
-### **Análise Gráfica**
+### ** 2. Análise Gráfica**
 
 A função \( T(x) = 4 + 0.5x \) é uma reta, porque é uma função linear. Ao analisar graficamente:
 
@@ -72,7 +72,7 @@ x = -8
 
 Entretanto, esse valor não faz sentido dentro do contexto da função, pois o número de passageiros não pode ser negativo. Isso confirma que a função não atravessa o eixo x no intervalo \( x \in [0, 20] \), ou seja, a tarifa nunca será zero dentro desse intervalo.
 
-### **Cálculo Aplicado:**
+### **3. Cálculo Aplicado:**
 
 Vamos calcular a diferença máxima entre a menor e a maior tarifa cobradas, dado que o número de passageiros varia entre 5 e 18.
 
@@ -93,7 +93,7 @@ Vamos calcular a diferença máxima entre a menor e a maior tarifa cobradas, dad
 
 Portanto, a diferença máxima entre a menor e a maior tarifa cobradas é R$ 6,50.
 
-### **Implementação no Scilab**
+### **4. Implementação no Scilab**
 
 Agora, vamos ao código Scilab para gerar o gráfico da função e incluir os comentários explicando cada linha:
 
@@ -128,23 +128,7 @@ disp("Diferença máxima de tarifa: " + string(T_max - T_min));  // Exibe a dife
 legend("T_x = 4 + 0.5*x")
 ```
 
-### **Explicação do Código:**
-
-- **`x = 0:0.1:20`**: Define o intervalo de passageiros de 0 a 20 com incremento de 0.1.
-- **`T = 4 + 0.5 * x`**: Calcula a tarifa para cada valor de \( x \) no intervalo definido.
-- **`plot(x, T)`**: Plota o gráfico da função tarifária.
-- **`xlabel` e `ylabel`**: Adiciona rótulos aos eixos x e y para descrever o que cada um representa.
-- **`title`**: Define o título do gráfico.
-- **`plot(x, T, "r-")`**: Plota a curva da tarifa com linha vermelha.
-- **`x_min = 5` e `x_max = 18`**: Define os valores de \( x \) para os quais calculamos as tarifas mínima e máxima.
-- **`plot(x_min, T_min, "bo")`** e **`plot(x_max, T_max, "go")`**: Marca no gráfico os pontos correspondentes aos valores de \( x = 5 \) e \( x = 18 \).
-- **`disp`**: Exibe a diferença máxima entre as tarifas no console.
-
-### **Esboço do Gráfico**
-
-A reta começando em \( T(0) = 4 \) e subindo com uma inclinação de 0.5. A reta intercepta o eixo y em \( T = 4 \), e para \( x = 20 \), \( T(20) = 4 + 0.5 \times 20 = 14 \).
-
-Marque os pontos \( x = 5 \) e \( x = 18 \) no gráfico, mostrando que a diferença entre as tarifas nesses pontos é de R$ 6,50.
+#### **4.1 Grafico**
 
 ![image](https://github.com/user-attachments/assets/f7040110-917f-45f0-9359-48dc77d01a36)
 
