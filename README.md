@@ -451,3 +451,106 @@ legend("Crescimento da poluição", "Poluição em 2030", "Poluição em 2035");
 #### **6.1 Grafico**
 
 ![image](https://github.com/user-attachments/assets/7e7ee2d4-994d-4081-8ba9-b9941d00e767)
+
+---
+
+## **(Questão 5) - :**
+
+---
+
+Um aplicativo de transporte cobra uma taxa fixa de R$ 7,00 assim que a corrida é iniciada. Além disso, a cada quilômetro percorrido, é cobrado um adicional de R$ 2,50. 
+
+---
+
+### **1. Equação do Custo da Corrida**
+
+A equação que representa o custo \( C \) da corrida em função da distância \( d \) percorrida é dada por:
+
+$$
+C(d) = 7 + 2.50d
+$$
+
+Onde:
+
+- \( C(d) \) é o custo total da corrida em reais (R$).
+- \( d \) é a distância percorrida em quilômetros.
+
+A taxa fixa de R$ 7,00 é cobrada assim que a corrida começa, e o valor adicional de R$ 2,50 é cobrado por cada quilômetro percorrido.
+
+### **2. Cálculo do Custo para uma Corrida de 10 km**
+
+Substituindo \( d = 10 \) na equação:
+
+$$
+C(10) = 7 + 2.50(10) = 7 + 25 = 32 \text{ reais}
+$$
+
+Portanto, o custo de uma corrida de 10 km será **R$ 32,00**.
+
+### **3. Cálculo com Desconto de 10% para Corridas Acima de 15 km**
+
+Se a distância for maior que 15 km, o aplicativo oferece um desconto de 10% no custo da corrida. Vamos calcular o custo para uma corrida de 16 km, por exemplo.
+
+Primeiro, calculamos o custo sem o desconto para \( d = 16 \):
+
+$$
+C(16) = 7 + 2.50(16) = 7 + 40 = 47 \text{ reais}
+$$
+
+Agora, aplicamos o desconto de 10%:
+
+$$
+C_{\text{desconto}} = 47 \times 0.90 = 42.30 \text{ reais}
+$$
+
+Portanto, o custo de uma corrida de 16 km com o desconto será **R$ 42,30**.
+
+### **4. Projeção de Custo para Diferentes Distâncias**
+
+Para distâncias menores ou iguais a 15 km, o custo é dado diretamente pela equação \( C(d) = 7 + 2.50d \). Para distâncias maiores que 15 km, deve-se aplicar o desconto de 10%.
+
+### **5. Esboço Manual do Gráfico**
+
+- **Até 15 km**: O gráfico será uma reta crescente com inclinação de \( 2.50 \) e interceptação em \( C(0) = 7 \).
+- **Acima de 15 km**: A reta continuará a crescer, mas com a redução de 10% no custo.
+
+O gráfico terá um ponto de inflexão em \( d = 15 \), onde o desconto começa a ser aplicado.
+
+### **6. Código Scilab - Implementação da Função e Geração do Gráfico**
+
+```scilab
+// 1. Definir a função custo
+function C = custo(d)
+    if d <= 15 then
+        C = 7 + 2.50 * d;  // Cálculo do custo sem desconto
+    else
+        C = (7 + 2.50 * d) * 0.90;  // Cálculo do custo com 10% de desconto
+    end
+endfunction
+
+// 2. Definir o intervalo de distâncias (de 0 a 20 km)
+d = 0:0.1:20;  // Distâncias entre 0 e 20 km
+
+// 3. Calcular os custos correspondentes
+C_values = arrayfun(custo, d);  // Aplica a função custo para cada valor de d
+
+// 4. Plotar o gráfico
+plot(d, C_values, "r--");  // Linha vermelha tracejada
+xlabel("Distância (km)");  // Rótulo do eixo x
+ylabel("Custo (R$)");  // Rótulo do eixo y
+title("Custo da Corrida em Função da Distância");  // Título do gráfico
+
+// 5. Marcar o ponto de desconto
+plot(15, custo(15), "bo");  // Ponto de inflexão em d = 15 km
+
+// 6. Exibir o custo de 10 km
+disp("Custo de uma corrida de 10 km: " + string(custo(10)));
+
+// 7. Exibir o custo com desconto para 16 km
+disp("Custo de uma corrida de 16 km com desconto: " + string(custo(16)));
+
+// 8. Adicionar legenda
+legend("Custo da corrida", "Ponto de inflexão (desconto)");
+```
+
+#### **6.1 Gráfico**
