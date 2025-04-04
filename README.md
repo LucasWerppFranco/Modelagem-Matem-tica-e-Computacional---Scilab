@@ -510,38 +510,23 @@ O gráfico terá um ponto de inflexão em \( d = 15 \), onde o desconto começa 
 ### **6. Código Scilab - Implementação da Função e Geração do Gráfico**
 
 ```scilab
-// 1. Definir a função custo
-function C = custo(d)
-    if d <= 15 then
-        C = 7 + 2.50 * d;  // Cálculo do custo sem desconto
-    else
-        C = (7 + 2.50 * d) * 0.90;  // Cálculo do custo com 10% de desconto
-    end
-endfunction
+// Entregando os dados.
+d = 0:20
+C_d = 2.5d + 7
 
-// 2. Definir o intervalo de distâncias (de 0 a 20 km)
-d = 0:0.1:20;  // Distâncias entre 0 e 20 km
+// Plotando o gráfico.
+plot(d, C_d, 'r--', 'LineWidht', 2)
+title("Aplicativo de transporte.")
+xlabel("Quilômetro percorrido.")
+ylabel("Preço cobrado por corrida em reais")
 
-// 3. Calcular os custos correspondentes
-C_values = arrayfun(custo, d);  // Aplica a função custo para cada valor de d
-
-// 4. Plotar o gráfico
-plot(d, C_values, "r--");  // Linha vermelha tracejada
-xlabel("Distância (km)");  // Rótulo do eixo x
-ylabel("Custo (R$)");  // Rótulo do eixo y
-title("Custo da Corrida em Função da Distância");  // Título do gráfico
-
-// 5. Marcar o ponto de desconto
-plot(15, custo(15), "bo");  // Ponto de inflexão em d = 15 km
-
-// 6. Exibir o custo de 10 km
-disp("Custo de uma corrida de 10 km: " + string(custo(10)));
-
-// 7. Exibir o custo com desconto para 16 km
-disp("Custo de uma corrida de 16 km com desconto: " + string(custo(16)));
-
-// 8. Adicionar legenda
-legend("Custo da corrida", "Ponto de inflexão (desconto)");
+// Legendando e botando grade ao gráfico.
+legend("C_d = 2.5d + 7")
+xgrid ()
 ```
 
 #### **6.1 Gráfico**
+
+![image](https://github.com/user-attachments/assets/1efb9e71-6b83-4520-8530-a68256388fbd)
+
+---
