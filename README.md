@@ -144,10 +144,6 @@ onde h(t) é a altura em metros e t é o tempo em segundos após a decol
 
 --- 
 
-### Análise do Percurso de um Drone de Entregas
-
-Este documento apresenta a análise da trajetória de um drone de entregas modelada por uma equação quadrática. O objetivo é compreender o comportamento da função e implementar a simulação no Scilab.
-
 ### **1. Equação do Movimento**
 
 A altura do drone em função do tempo é dada por:
@@ -261,12 +257,7 @@ E(x) = x2 − 10x + 30,	x -30
 onde E(x) é o consumo energético em megawatts e x é a quantidade de máquinas em operação.  
 
 ---
-
-### **1. Otimização do Consumo de Energia em uma Indústria**
-
-Este documento apresenta a análise da função que modela o consumo de energia em uma indústria, visando determinar a quantidade ótima de máquinas em operação para minimizar o consumo energético.
-
-1. Equação do Consumo Energético
+### **1. Equação do Consumo Energético**
 
 A função que modela o consumo de energia agora é:
 E(x)=x2−10x−30
