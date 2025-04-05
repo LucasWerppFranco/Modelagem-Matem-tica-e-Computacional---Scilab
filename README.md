@@ -130,6 +130,9 @@ legend("T_x = 4 + 0.5*x")
 
 #### **4.1 Grafico**
 
+![image](https://github.com/user-attachments/assets/5c81b75f-b5a8-471e-b10b-4198d5ef92e0)
+
+
 ![image](https://github.com/user-attachments/assets/f7040110-917f-45f0-9359-48dc77d01a36)
 
 ---
@@ -244,6 +247,9 @@ legend("Trajetória do drone", "Altura máxima", "Retorno aosolo");
 
 #### **5.1 - Grafico**
 
+![image](https://github.com/user-attachments/assets/7099db40-9d0d-4259-b951-182a26c43f44)
+
+
 ![image](https://github.com/user-attachments/assets/d0c4f1b1-d39b-488a-a41e-d30e98d23e2f)
 
 ---
@@ -329,6 +335,9 @@ legend("Consumo energético", "Ponto mínimo de consumo");  // Adiciona a legend
 ```
 
 #### **5.1 - Grafico**
+
+![image](https://github.com/user-attachments/assets/64bc2060-d4d9-4b16-8e22-417f970aca0e)
+
 
 ![image](https://github.com/user-attachments/assets/f3611393-4ff1-48e4-8f1b-dd066597338e)
 
@@ -441,6 +450,9 @@ legend("Crescimento da poluição", "Poluição em 2030", "Poluição em 2035");
 
 #### **6.1 Grafico**
 
+![image](https://github.com/user-attachments/assets/d993ee95-3d66-4c73-84f3-04e7a8ff658d)
+
+
 ![image](https://github.com/user-attachments/assets/7e7ee2d4-994d-4081-8ba9-b9941d00e767)
 
 ---
@@ -526,6 +538,9 @@ xgrid ()
 ```
 
 #### **6.1 Gráfico**
+
+![image](https://github.com/user-attachments/assets/5caa2228-a419-428b-8a11-3a561ff98f40)
+
 
 ![image](https://github.com/user-attachments/assets/1efb9e71-6b83-4520-8530-a68256388fbd)
 
